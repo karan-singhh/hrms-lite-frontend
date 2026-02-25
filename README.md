@@ -59,7 +59,7 @@ cd hrms-lite-frontend
 
 
 ### 2. Install Dependencies
-npm 
+npm install
 
 ### 3. Create environment file
 
