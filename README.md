@@ -1,16 +1,97 @@
-# React + Vite
+# HRMS Lite – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo:  
+https://hrms-lite-frontend-teal.vercel.app/
 
-Currently, two official plugins are available:
+Backend Repository:  
+https://github.com/karan-singhh/hrms-lite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Backend API (Render):  
+https://hrms-lite-mrcj.onrender.com/docs
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is the frontend for HRMS Lite, a lightweight Human Resource Management System. It provides a simple interface to manage employees and track attendance.
+
+The frontend is built using React (Vite) and communicates with a FastAPI backend via REST APIs.
+
+Features:
+
+- View employee list
+- Add new employees
+- Record attendance
+- View attendance records
+- Fully integrated with backend API
+- Production deployment on Vercel
+
+
+---
+
+## Tech Stack
+
+- React (Vite)
+- JavaScript (ES6+)
+- Fetch API
+- CSS
+- Vercel (deployment)
+
+
+---
+
+## Architecture
+Browser -> React Frontend (Vercel) -> FastAPI Backend (Render)-> MongoDB Atlas
+
+
+
+---
+
+## Running Locally
+
+## 1. Clone repository
+
+```bash
+git clone https://github.com/karan-singhh/hrms-lite-frontend.git
+cd hrms-lite-frontend 
+```
+
+
+### 2. Install Dependencies
+npm 
+
+### 3. Create environment file
+
+Create .env in project root:
+```
+VITE_API_BASE_URL=http://127.0.0.1:8000 
+```
+
+### 4. Start Dev Server
+``` npm run dev ```
+
+Frontend will run at- 
+http://localhost:5173
+
+### Environment Variables-
+## For Production-
+VITE_API_BASE_URL=https://hrms-lite-mrcj.onrender.com
+
+### Deployment
+
+Hosted on Vercel:
+https://hrms-lite-frontend-teal.vercel.app/
+
+
+### Notes
+
+Frontend communicates with backend via REST APIs
+Environment variables are injected at build time
+Designed as a lightweight demo and portfolio project
+
+### Related Repository
+
+Backend:
+https://github.com/karan-singhh/hrms-lite
+
